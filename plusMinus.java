@@ -51,3 +51,14 @@ public class Solution {
         bufferedReader.close();
     }
 }
+
+/**
+*
+Input (stdin)
+6
+-4 3 -9 0 4 1
+Your Output (stdout)
+0.500000
+0.333333
+0.166667
+**/
