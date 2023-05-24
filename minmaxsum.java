@@ -1,4 +1,3 @@
-
 class Result {
 
     /*
@@ -9,10 +8,9 @@ class Result {
 
     public static void miniMaxSum(List<Integer> arr) {
     // Write your code here
-    
-        int first=arr.stream().sorted().limit(4).mapToInt(Integer::intValue).sum();
-         int last=arr.stream().sorted(Comparator.reverseOrder()).limit(4).mapToInt(Integer::intValue).sum();
-        System.out.println(first+" "+last);
+    long first = arr.stream().sorted().limit(4).mapToLong(Integer::longValue).sum();
+    long last = arr.stream().sorted(Comparator.reverseOrder()).limit(4).mapToLong(Integer::longValue).sum();
+    System.out.println(first + " " + last);
     }
 
 }
